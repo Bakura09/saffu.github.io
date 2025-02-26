@@ -1,15 +1,26 @@
 body {
+  /* background-image: url("/resources/Images/background.jpeg"); */
+  /* background: rgba(0, 0, 0, 0.7), url("/resources/Images/background.jpeg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/resources/Images/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  column-gap: 150px;
   padding-top: 100px;
+  color: white;
 }
 
 div.card {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(36, 54, 60, 0.4);
+  z-index: 0;
   border-radius: 20px;
-  height: 80vh;
-  width: 70%;
+  height: 40%;
+  width: 40%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -18,11 +29,11 @@ div.card {
 
 div.card__label {
   position: absolute;
-  top: -80px;
+  top: -55px;
   width: 100%;
   text-align: center;
-  font-size: 30px;
-  z-index: 100;
+  font-size: 20px;
+  z-index: 1;
 }
 
 div.card__body {
@@ -32,7 +43,8 @@ div.card__body {
 }
 
 div.card__headline {
-  font-size: 30px;
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 div.inputs {
@@ -81,10 +93,44 @@ div.inputs {
   width: 100px;
   height: 40px;
   margin: 20px auto;
+  color: white;
+  background-color: rgb(8, 143, 191);
 }
 
 input {
   height: 40px;
   border-radius: 5px;
   border: solid white;
+}
+
+div.hero-hook {
+  width: 625px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+div.hero-hook .discover {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+div.hero-hook .dubai {
+  font-size: 200px;
+  text-transform: uppercase;
+}
+
+div.hero-hook .text {
+  font-size: 25px;
+  font-style: italic;
+}
+
+div.hero-hook .discover,
+div.hero-hook .dubai,
+div.hero-hook .text {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 0.9;
 }
