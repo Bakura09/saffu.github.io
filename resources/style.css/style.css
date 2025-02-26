@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+div.card {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  height: 80vh;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card__label {
+  position: absolute;
+  top: -80px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+div.card__body {
+  /* border: solid black; */
+  width: 70%;
+  height: 90%;
+}
+
+div.card__headline {
+  font-size: 30px;
+}
+
+div.inputs {
+  display: grid;
+  grid-template-columns: auto 40px auto;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 20px;
+}
+
+#first-name {
+  grid-column: 1 / 2;
+}
+
+#last-name {
+  grid-column: 3 / 4;
+}
+
+#datetime {
+  grid-column: 1 / 4;
+}
+
+#tel {
+  grid-column: 1 / 2;
+}
+
+#email {
+  grid-row: 4/5;
+  grid-column: 1 / 4;
+}
+
+#guests {
+  grid-column: 3 / 4;
+}
+
+#special {
+  grid-row: 5 / 6;
+  grid-column: 1 / 4;
+  height: 70px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container input[type="button"] {
+  width: 100px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: solid white;
+}
